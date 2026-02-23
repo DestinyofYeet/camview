@@ -23,8 +23,8 @@ num_enum = "0.6"
 itertools = "0.11"
 
 # Interface
-clap = { version = "4", default-features = false, features = ["std", "derive", "help"] }
-slint = { version = " 1.6", default-features = false, features = ["std", "compat-1-2"] }
+clap = { version = "4.5", default-features = false, features = ["std", "derive", "help"] }
+slint = { version = " 1.15.1", default-features = false, features = ["std", "compat-1-2"] }
 
 # Data
 image = { version = "0.25", default-features = false, features = ["jpeg"] }
@@ -34,8 +34,8 @@ sys-locale = "0.3"
 
 # I/O
 futures-util = "0.3"
-tokio = { version = "1", features = ["io-util","time"] }
-reqwest = { version = "0.11", default-features = false, features = ["json","trust-dns","default-tls"] }
+tokio = { version = "1.49", features = ["io-util","time"] }
+reqwest = { version = "0.13", default-features = false, features = ["json","query","default-tls"] }
 
 # Logging
 tracing = { version = "0.1", features = ["log", "release_max_level_debug"] }
